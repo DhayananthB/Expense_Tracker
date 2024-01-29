@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="400.0" maxWidth="500.0" minHeight="400.0" minWidth="500.0" prefHeight="400.0" prefWidth="500.0" spacing="10.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myproject.AddExpenseDialogController">
+    <Label text="Add New Expense" textFill="#38a0dc">
+      <font>
+         <Font name="Eras Bold ITC" size="20.0" />
+      </font></Label>
+    <TextField fx:id="amountField" maxWidth="300.0" minWidth="260.0" prefHeight="26.0" prefWidth="286.0" promptText="Amount" />
+    <TextField fx:id="remarksField" alignment="CENTER" maxWidth="300.0" minWidth="287.0" prefHeight="94.0" prefWidth="300.0" promptText="Remarks" />
+    <ChoiceBox fx:id="categoryChoiceBox">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="EMI" />
+                <String fx:value="Food" />
+                <String fx:value="Bills" />
+                <String fx:value="Travel" />
+                <String fx:value="Grocery" />
+                <String fx:value="Hospital" />
+                <String fx:value="Others" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button onAction="#onAddExpense" style="-fx-background-color: #38a0dc;" text="ADD" textFill="WHITE" />
+</VBox>

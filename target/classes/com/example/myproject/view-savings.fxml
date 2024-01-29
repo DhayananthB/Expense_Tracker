@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="balanceVBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="193.0" minWidth="300.0" prefHeight="193.0" prefWidth="365.0" spacing="10.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myproject.ViewSavings">
+    <children>
+        <Label text="View Total Savings" textFill="#38a0dc">
+            <font>
+                <Font name="Eras Bold ITC" size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="budgetLabel" alignment="CENTER" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font name="Eras Bold ITC" size="16.0" />
+            </font></Label>
+    </children>
+</VBox>
